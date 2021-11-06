@@ -1,27 +1,16 @@
-Vue.component("top", {
-  template: `
-    <div id="header" class="header font-circular">
-			<span class="logo-center-helper"></span>
-			<button class="openbtn" onclick="openNav()">☰</button>
-			<a href='index.html'><img class="logo-img" src="assets/schroders-logo-white-solo.svg" /></a>
-	  	</div>
-    </head> 
-    `,
-});
-
-Vue.component("sidebar", {
-  template: `
-   <div id="left" class="left">
+<template>
+    <div id="left" class="left">
+				<!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a> -->
 				<div class="search">
 					<img class="search-btn" src='assets/button-search-in-text-field@3x.png' />
 					<input type="text" />
 					<img class="search-btn" src='assets/button-close-in-text-field@3x.png' />
 				</div>
 				<h3 class="left-title">
-					<span class="left-title-text font-circular">UOB-Schroders</span>
-						<span class="left-title-text font-circular">Sustainable</span>
-							<span class="left-title-text font-circular">Investing</span>
-								<span class="left-title-text font-circular">Master Class</span>
+					<span class="left-title-text font-circular">UOB-Schroders
+						<span class="left-title-text font-circular">Sustainable
+							<span class="left-title-text font-circular">Investing
+								<span class="left-title-text font-circular">Master Class
 				</h3>
 				<div class="progress">
 					<div class="progress-bar">
@@ -71,12 +60,12 @@ Vue.component("sidebar", {
 					</div>
 				</div>
 			</div>
-    `,
-});
+</template>
 
-var app = new Vue({
-  el: "#app",
-  data: {
-    message: "Hello Vue!",
-  },
-});
+<script>
+
+</script>
+
+<style>
+
+</style>
