@@ -103,7 +103,7 @@ const template = `
         </div>
        
         <div class="section module">
-            <router-link to="/M1-2" class="module-question font-circular">
+            <router-link to="/M1-2" class="module-question font-circular"> 
                 <div class="section-text">
                     Module 1: What sustainable investing means <img src="assets/btn-cta-white@3x.png" />
                 </div>

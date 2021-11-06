@@ -351,22 +351,22 @@ html, body {
   }
   
   .module1-1 {
-    background: url(../assets/banner-mod-1-hero-1-1190-x-450@2x.jpg);
+    background: url(./assets/banner-mod-1-hero-1-1190-x-450@2x.jpg);
   }
   
   .module1-2 {
-    background: url(../assets/banner-mod-1-hero-2-1190-x-450@2x.png);
+    background: url(./assets/banner-mod-1-hero-2-1190-x-450@2x.png);
   }
   
   .module1-3 {
-    background: url(../assets/banner-mod-1-hero-3-1190-x-450@2x.png);
+    background: url(./assets/banner-mod-1-hero-3-1190-x-450@2x.png);
   }
   
   .module1-4 {
-    background: url(../assets/banner-knowledge-1-hero-1190-x-450@2x.png);
+    background: url(./assets/banner-knowledge-1-hero-1190-x-450@2x.png);
   }
   .module1-summary {
-      background: url(../assets/banner-mod-1-summary-hero-1190-x-450@2x.png);
+      background: url(./assets/banner-mod-1-summary-hero-1190-x-450@2x.png);
   }
   
   .banner .banner-text {
