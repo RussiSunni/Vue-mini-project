@@ -49,7 +49,7 @@ Only by considering these three pillars together can investors uncover a company
 </div>
 </div>
 <div class="section module">
-  <router-link to="/M1-4" class="module-question font-circular"> 
+  <router-link to="/M1-5" class="module-question font-circular"> 
     <div class="section-text">
       Proceed to the next section to check your knowledge! <img src="assets/btn-cta-white@3x.png" />
     </div>
