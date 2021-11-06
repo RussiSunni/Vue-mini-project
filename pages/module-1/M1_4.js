@@ -21,12 +21,12 @@ const template = `
   </div>
   <div class="section instructions">     
     <div class="section-text">
-      <p>Evidence so far suggests that this has had meaningful implications for returns. Morningstar Financial Research2 examined the performance of their ESG indices and found that 75% outperformed their broad market equivalents in 2020.</p>
+      <p>Evidence so far suggests that this has had meaningful implications for returns. Morningstar Financial Research<sup><span class="superscript">2</span></sup> examined the performance of their ESG indices and found that 75% outperformed their broad market equivalents in 2020.</p>
     </div>
   </div>
   <div class="section instructions">   
   <div class="reference-text">
-      <sup>2</sup>Source: Morningstar Financial Research, Feb 2021. 69 unique Morningstar indexes were examined, mostly equity-focused but also including a corporate bond benchmark.
+      2. Source: Morningstar Financial Research, Feb 2021. 69 unique Morningstar indexes were examined, mostly equity-focused but also including a corporate bond benchmark.
   </div>
 </div>
 <div class="section instructions">  
