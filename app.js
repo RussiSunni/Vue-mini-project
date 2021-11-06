@@ -1,15 +1,33 @@
-Vue.component("top", {
+const Home = { template: "<div>Home</div>" };
+const About = { template: "<div>About</div>" };
+
+const routes = [
+  { path: "/M1-1", component: Home },
+  { path: "/M1-2", component: About },
+];
+
+const router = VueRouter.createRouter({
+  history: VueRouter.createWebHashHistory(),
+  routes,
+});
+
+const app = Vue.createApp({});
+// Make sure to _use_ the router instance to make the
+// whole app router-aware.
+app.use(router);
+
+app.component("top", {
   template: `
     <div id="header" class="header font-circular">
 			<span class="logo-center-helper"></span>
 			<button class="openbtn" onclick="openNav()">☰</button>
 			<a href='index.html'><img class="logo-img" src="assets/schroders-logo-white-solo.svg" /></a>
 	  	</div>
-    </head> 
+    </head>
     `,
 });
 
-Vue.component("sidebar", {
+app.component("sidebar", {
   template: `
    <div id="left" class="left">
 				<div class="search">
@@ -74,9 +92,6 @@ Vue.component("sidebar", {
     `,
 });
 
-var app = new Vue({
-  el: "#app",
-  data: {
-    message: "Hello Vue!",
-  },
-});
+app.mount("#app");
+
+// Now the app has started!
