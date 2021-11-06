@@ -23,8 +23,8 @@ const template = `
     <a href="#submodule-1-1" class="submodule-question font-circular">
       <div class="section-text">
         <div class="point">
-          <div class="point-number">2</div>
-          <div class="point-text">What is sustainable investing? Select ONE answer.</div>
+          <div class="point-number">3</div>
+          <div class="point-text">The following are reasons why should investors consider impact risk EXCEPT:</div>
         </div>
       </div>
     </a>
@@ -33,20 +33,20 @@ const template = `
       <div class="submodule-answer answer">
         <div class="submodule-answer-box option fadeInOut">
           <div class="section-text">
-            Sustainable investing is recognising that companies who pursue good ESG practices are more likely to achieve better financial results over time
+            Considering impact risk, alongside risk and return, is crucial for investors to uncover a company’s real investment potential
             <div>
-              <button id="button1" onclick="showSubmoduleAnswerFeedback(this, 1)" class="submodule-button" type="button">
+              <button id="button1" onclick="showSubmoduleAnswerFeedback(this, 0)" class="submodule-button" type="button">
                 Select
               </button>
             </div>
           </div>
         </div>
-        <div class="submodule-answer-box feedback correct fadeInOut hidden">
+        <div class="submodule-answer-box feedback incorrect fadeInOut hidden">
           <div class="result">
-            Correct!
+            Incorrect!
           </div>
           <div class="section-text">
-            Companies that pursue good ESG practices are also more likely to yield the best results for their investors.
+            Companies and their operations have ripple effects on the economies and societies surrounding them. Therefore, accessing a company’s impact risk will be crucial in understanding its long-term value for investors. 
           </div>
         </div>
       </div>
@@ -54,7 +54,7 @@ const template = `
       <div class="submodule-answer answer">
         <div class="submodule-answer-box option">
           <div class="section-text">
-            Sustainable investing is all about an investor’s values, not good performance
+            The impact that companies have on people and the planet are increasingly being translated into financial costs
             <div>
               <button id="button2" onclick="showSubmoduleAnswerFeedback(this, 0)" class="submodule-button" type="button">
                 Select
@@ -67,7 +67,7 @@ const template = `
             Incorrect!
           </div>
           <div class="section-text">
-            Companies that consider ESG factors are likely to grow faster, benefit from more incentives, and enjoy greater consumer support, which translates to better long-term performance for investors.
+            Companies and their operations have ripple effects on the economies and societies surrounding them. Therefore, accessing a company’s impact risk will be crucial in understanding its long-term value for investors.   
           </div>
         </div>
       </div>
@@ -75,61 +75,42 @@ const template = `
       <div class="submodule-answer answer">
         <div class="submodule-answer-box option">
           <div class="section-text">
-            Sustainable investing is a short-term fad popular amongst investors today
+            Taking impact risk into account means that investors will need to sacrifice investment returns
             <div>
-              <button id="button3" onclick="showSubmoduleAnswerFeedback(this, 0)" class="submodule-button" type="button">
+              <button id="button3" onclick="showSubmoduleAnswerFeedback(this, 1)" class="submodule-button" type="button">
                 Select
               </button>
             </div>
           </div>
         </div>
-        <div class="submodule-answer-box feedback incorrect fadeInOut hidden">
+        <div id="correct" class="submodule-answer-box feedback correct fadeInOut hidden">
           <div class="result">
-            Incorrect!
+            Correct!
           </div>
           <div class="section-text">
-            Sustainability is not a passing trend. It’s vital for companies with an eye on the future to consider, and it’s a must for investors looking for resilient, high-performing long-term investments.
+            On the contrary, assessing a company’s impact risk is crucial in understanding it’s long-term value and can potentially help enhance investment returns.
           </div>
         </div>
       </div>
 
-      <div class="submodule-answer answer">
-        <div class="submodule-answer-box option">
-          <div class="section-text">
-            Sustainable investing is only about excluding ethically dubious sectors
-            <div>
-              <button id="button4" onclick="showSubmoduleAnswerFeedback(this, 0)" class="submodule-button" type="button">
-                Select
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="submodule-answer-box feedback incorrect fadeInOut hidden">
-          <div class="result">
-            Incorrect!
-          </div>
-          <div class="section-text">
-            Exclusion is only one possible strategy. Sustainable investing is a broad investment approach that is considered at all stages of the investment process.
-          </div>
-        </div>
-      </div>
     </div>
     <div class="submodule-indicators">
       <div class="submodule-indicator"></div>
-      <div class="submodule-indicator active"></div>
       <div class="submodule-indicator"></div>
+      <div class="submodule-indicator active"></div>
     </div>
   </div>
   
 </div>
 <div class="section module" id="module-1">
-  <router-link to="/M1-7" class="module-question font-circular"> 
-    <div class="section-text">
-      Go to question 3 <img src="assets/btn-cta-white@3x.png" />
+<router-link to="/M1-7" class="module-question font-circular"> 
+  <div class="section-text">
+      Your score <img src="assets/btn-cta-white@3x.png" />
     </div>
   </router-link>
 </div>
 </div>
+
 
 `;
 

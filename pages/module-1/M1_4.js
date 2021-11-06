@@ -1,12 +1,11 @@
 const template = `
 <div class="right">
-<div class="banner module1-3">
+<div class="banner module1-4">
   <div class="banner-text">
     <div class="title">
-      <span class="title-text">WHY HAS SUSTAINABLE
-        <span class="title-text">INVESTING BECOME
-          <span class="title-text">SO IMPORTANT?
-          </span>
+      <span class="title-text">KNOWLEDGE
+        <span class="title-text">CHECK
+          
         </span>
       </span>
     </div>
@@ -16,42 +15,117 @@ const template = `
 
   <div class="section instructions">
     <div class="section-text">
-      <p>Goals to curb carbon emissions and increased scrutiny of how companies treat all stakeholders have quickly shifted the investing universe’s appetite for ESG.</p> 
+      <p>Answer at least 2 out of 3 correct answers (67%) to complete this module.</p> 
     </div>
   </div>
-  <div class="section instructions">     
-    <div class="section-text">
-      <p>Evidence so far suggests that this has had meaningful implications for returns. Morningstar Financial Research<sup><span class="superscript">2</span></sup> examined the performance of their ESG indices and found that 75% outperformed their broad market equivalents in 2020.</p>
+
+  <div class="section submodule" id="submodule-1-1">
+    <a href="#submodule-1-1" class="submodule-question font-circular">
+      <div class="section-text">
+        <div class="point">
+          <div class="point-number">1</div>
+          <div class="point-text">What does ESG stand for? Select ONE answer.</div>
+        </div>
+      </div>
+    </a>
+    <img class="image" src="assets/illustrations-mod-1-kc-1.svg">
+    <div class="submodule-answers">
+      <div class="submodule-answer answer">
+        <div class="submodule-answer-box option fadeInOut">
+          <div class="section-text">
+            Earth, Social and Governance
+            <div>
+              <button id="button1" onclick="showSubmoduleAnswerFeedback(this, 0)" class="submodule-button" type="button">
+                Select
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="submodule-answer-box feedback incorrect fadeInOut hidden">
+          <div class="result">
+            Incorrect!
+          </div> 
+          <div class="section-text">
+            'ESG' Stands for Environmental, Social and Governance.
+          </div>
+        </div>
+      </div>
+      
+      <div class="submodule-answer answer">
+        <div class="submodule-answer-box option">
+          <div class="section-text">
+            Environmental, Sustainability and Governance
+            <div>
+              <button id="button2" onclick="showSubmoduleAnswerFeedback(this, 0)" class="submodule-button" type="button">
+                Select
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="submodule-answer-box feedback incorrect fadeInOut hidden">
+          <div class="result">
+            Incorrect!
+          </div>
+          <div class="section-text">
+            'ESG' Stands for Environmental, Social and Governance.
+          </div>
+        </div>
+      </div>
+
+      <div class="submodule-answer answer">
+        <div class="submodule-answer-box option">
+          <div class="section-text">
+            Environmental, Social and Government
+            <div>
+              <button id="button3" onclick="showSubmoduleAnswerFeedback(this, 0)" class="submodule-button" type="button">
+                Select
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="submodule-answer-box feedback incorrect fadeInOut hidden">
+          <div class="result">
+            Incorrect!
+          </div>
+          <div class="section-text">
+            'ESG' Stands for Environmental, Social and Governance.
+          </div>
+        </div>
+      </div>
+
+      <div class="submodule-answer answer">
+        <div class="submodule-answer-box option">
+          <div class="section-text">
+            Environmental, Social and Governance
+            <div>
+              <button id="button4" onclick="showSubmoduleAnswerFeedback(this, 1)" class="submodule-button" type="button">
+                Select
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="submodule-answer-box feedback correct fadeInOut hidden">
+          <div class="result">
+            Correct!
+          </div>
+          <div class="section-text">
+            'ESG' Stands for Environmental, Social and Governance.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="submodule-indicators">
+      <div class="submodule-indicator active"></div>
+      <div class="submodule-indicator"></div>
+      <div class="submodule-indicator"></div>
     </div>
   </div>
-  <div class="section instructions">   
-  <div class="reference-text">
-      2. Source: Morningstar Financial Research, Feb 2021. 69 unique Morningstar indexes were examined, mostly equity-focused but also including a corporate bond benchmark.
-  </div>
+  
 </div>
-<div class="section instructions">  
-  <img class="image full-width" src='assets/illustrations-mod-1-why-has-sustainable@2x.png' />
-</div>
-<div class="section instructions">
-  <div class="section-text">
-This outcome is not surprising. Sustainable investing takes investing further than just risk and return by adding a third dimension – impact risk. 
-    </div>
-</div>
-<div class="section instructions">
-  <div class="section-text">    
-Understanding the impact companies have on society and the planet is crucial in determining their true costs. This is because negative activities are risks that can translate into a financial cost to a company. 
-  </div>
-</div>
-<div class="section instructions">
-  <div class="section-text"> 
-Only by considering these three pillars together can investors uncover a company’s real investment potential.
-</div>
-</div>
-</div>
-<div class="section module">
+<div class="section module" id="module-1">
   <router-link to="/M1-5" class="module-question font-circular"> 
     <div class="section-text">
-      Proceed to the next section to check your knowledge! <img src="assets/btn-cta-white@3x.png" />
+      Go to question 2 <img src="assets/btn-cta-white@3x.png" />
     </div>
   </router-link>
 </div>
