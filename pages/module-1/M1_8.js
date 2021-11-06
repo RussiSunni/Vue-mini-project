@@ -42,13 +42,17 @@ const template = `
   </div>
   
 </div>
-<div class="section module">
-  <a :href=nextURLLink 
-   class="module-question font-circular">
+<div class="section module"> 
+  <router-link v-if="passed" to="/M1-9" class="module-question font-circular"> 
     <div class="section-text">
-      {{ nextURLText }} <img src="assets/btn-cta-white@3x.png" />
+      {{ nextURLText }} <img src="assets/btn-cta-white@3x.png" /> 
     </div>
-  </a>
+  </router-link>
+  <router-link v-else to="/M1-5" class="module-question font-circular"> 
+    <div class="section-text">
+      {{ nextURLText }} <img src="assets/btn-cta-white@3x.png" /> 
+    </div>
+  </router-link>
 </div>
 </div>
 
@@ -79,13 +83,28 @@ export default {
     resultImgURL() {
       var score = localStorage.getItem("score");
       var imgSrc = "";
-
       if (score < 2) imgSrc = "assets/illustrations-kc-score-bgd-image-33.svg";
       else if (score == 2)
         imgSrc = "assets/illustrations-kc-score-bgd-image-67.svg";
       else imgSrc = "assets/illustrations-kc-score-bgd-image-100.svg";
 
       return imgSrc;
+    },
+
+    nextURLText() {
+      var result = "";
+      var score = localStorage.getItem("score");
+      if (score < 2) result = "Take again";
+      else if (score == 2) result = "Go to summary";
+      else result = "Go to summary";
+
+      return result;
+    },
+
+    passed() {
+      var score = localStorage.getItem("score");
+      if (score < 2) return false;
+      else return true;
     },
   },
   template: template,
