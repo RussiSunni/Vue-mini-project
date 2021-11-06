@@ -290,6 +290,13 @@ html, body {
     border: none;
     font-weight: 400;
   }
+
+
+.item-content a {
+  color: white;
+  text-decoration: none;
+}
+
   
   /* right */
   

@@ -65,7 +65,7 @@ app.component("sidebar", {
 					<div class="item active">
 
 						<div class="item-content check">
-							Welcome to the course!
+						<router-link to="/"> Welcome to the course!</router-link>
 							<img src='assets/button-check-filled@3x.png' />
 						</div>
 						<div class="subitem">
