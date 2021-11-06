@@ -1,3 +1,4 @@
+const template = `
 <div class="right">
   <div class="banner module1-1">
     <div class="banner-text">
@@ -193,4 +194,8 @@
       </div>
     </a>
   </div>
-</div>
+</div>`;
+
+export default {
+  template: template,
+};

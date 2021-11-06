@@ -1,10 +1,9 @@
-import M1_1 from "/pages";
-
-const About = { template: "<div>About</div>" };
+import M1_1 from "./pages/module-1/M1_1.js";
+import M1_2 from "./pages/module-1/M1_2.js";
 
 const routes = [
-  { path: "/M1-1", component: M1_1 },
-  { path: "/M1-2", component: About },
+  { path: "/", component: M1_1 },
+  { path: "/M1-2", component: M1_2 },
 ];
 
 const router = VueRouter.createRouter({
