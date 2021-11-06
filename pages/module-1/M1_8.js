@@ -23,7 +23,6 @@ const template = `
     <div class="score-wrapper">
       <div class="score-detail">
         <div class="your-score">Your score</div>
-
         <div class="score-percentage-33">33%</div>
       </div>
       <img src="assets/illustrations-kc-score-bgd-image-33.svg">
@@ -35,7 +34,6 @@ const template = `
       <div class="score-wrapper">
         <div class="score-detail">
           <div class="your-score">Your score</div>
-
           <div v-bind:class=scoreClass>{{resultScore}}%</div> 
         </div>
         <img :src=resultImgURL>
@@ -67,6 +65,27 @@ export default {
       else result = "100";
 
       return result;
+    },
+
+    scoreClass() {
+      var result = "";
+      var score = localStorage.getItem("score");
+      if (score < 2) result = "score-percentage-33";
+      else result = "score-percentage";
+
+      return result;
+    },
+
+    resultImgURL() {
+      var score = localStorage.getItem("score");
+      var imgSrc = "";
+
+      if (score < 2) imgSrc = "assets/illustrations-kc-score-bgd-image-33.svg";
+      else if (score == 2)
+        imgSrc = "assets/illustrations-kc-score-bgd-image-67.svg";
+      else imgSrc = "assets/illustrations-kc-score-bgd-image-100.svg";
+
+      return imgSrc;
     },
   },
   template: template,
