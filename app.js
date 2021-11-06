@@ -1,8 +1,10 @@
-const Home = { template: "<div>Home</div>" };
+import M1_1 from "/pages";
+
+const M1_1 = { template: "<div>Home</div>" };
 const About = { template: "<div>About</div>" };
 
 const routes = [
-  { path: "/M1-1", component: Home },
+  { path: "/M1-1", component: M1_1 },
   { path: "/M1-2", component: About },
 ];
 
