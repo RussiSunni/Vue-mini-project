@@ -123,7 +123,7 @@ const template = `
   
 </div>
 <div class="section module" id="module-1">
-  <router-link to="/M1-6" class="module-question font-circular"> 
+  <router-link to="/M1-7" class="module-question font-circular"> 
     <div class="section-text">
       Go to question 3 <img src="assets/btn-cta-white@3x.png" />
     </div>
