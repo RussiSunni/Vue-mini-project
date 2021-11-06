@@ -6,6 +6,7 @@ import M1_5 from "./pages/module-1/M1_5.js";
 import M1_6 from "./pages/module-1/M1_6.js";
 import M1_7 from "./pages/module-1/M1_7.js";
 import M1_8 from "./pages/module-1/M1_8.js";
+import M1_9 from "./pages/module-1/M1_9.js";
 
 const routes = [
   { path: "/", component: M1_1 },
@@ -16,6 +17,7 @@ const routes = [
   { path: "/M1-6", component: M1_6 },
   { path: "/M1-7", component: M1_7 },
   { path: "/M1-8", component: M1_8 },
+  { path: "/M1-9", component: M1_9 },
 ];
 
 const router = VueRouter.createRouter({

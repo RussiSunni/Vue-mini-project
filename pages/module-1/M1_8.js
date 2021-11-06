@@ -43,12 +43,12 @@ const template = `
   
 </div>
 <div class="section module"> 
-  <router-link v-if="passed" to="/M1-9" class="module-question font-circular"> 
+  <router-link v-if="passed" to="/M1-9" class="module-question font-circular" @click="resetScore"> 
     <div class="section-text">
       {{ nextURLText }} <img src="assets/btn-cta-white@3x.png" /> 
     </div>
   </router-link>
-  <router-link v-else to="/M1-5" class="module-question font-circular"> 
+  <router-link v-else to="/M1-5" class="module-question font-circular" @click="resetScore"> 
     <div class="section-text">
       {{ nextURLText }} <img src="assets/btn-cta-white@3x.png" /> 
     </div>
@@ -108,4 +108,11 @@ export default {
     },
   },
   template: template,
+  methods: {
+    resetScore() {
+      score = localStorage.getItem("score");
+      score = 0;
+      localStorage.setItem("score", score);
+    },
+  },
 };
