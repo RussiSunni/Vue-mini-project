@@ -101,13 +101,13 @@ const template = `
                 </div>
             </div>
         </div>
-        <router-link to="/M1-2">Go to About</router-link>
+       
         <div class="section module">
-            <a href='/M1-2' class="module-question font-circular"> 
+            <router-link to="/M1-2" class="module-question font-circular">
                 <div class="section-text">
                     Module 1: What sustainable investing means <img src="assets/btn-cta-white@3x.png" />
                 </div>
-            </a>
+            </router-link>
         </div>
     </div>
     
