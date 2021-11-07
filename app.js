@@ -25,7 +25,7 @@ const router = VueRouter.createRouter({
   history: VueRouter.createWebHashHistory(),
   routes,
   scrollBehavior(to, from, savedPosition) {
-    return { left: 0, top: 0 };
+    return { left: 0, top: 0, behavior: "smooth" };
   },
 });
 
