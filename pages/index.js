@@ -101,17 +101,22 @@ const template = `
                 </div>
             </div>
         </div>
-       
         <div class="section module">
-            <router-link to="/M1-1" class="module-question font-circular"> 
+            <router-link to="/M1-1" class="module-question font-circular" @click="toggleNextPageVisited"> 
                 <div class="section-text">
                     Module 1: What sustainable investing means <img src="assets/btn-cta-white@3x.png" />
                 </div>
             </router-link>
         </div>
+        
     </div>
     
 `;
 export default {
   template: template,
+  methods: {
+    toggleNextPageVisited() {
+      this.$store.commit("M1_1Visited");
+    },
+  },
 };

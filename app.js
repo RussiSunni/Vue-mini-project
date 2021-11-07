@@ -26,10 +26,39 @@ const router = VueRouter.createRouter({
   routes,
 });
 
+const store = new Vuex.Store({
+  state: {
+    m1_1: false,
+    m1_2: false,
+    m1_3: false,
+    m1_4: false,
+    m1_8: false,
+  },
+  mutations: {
+    M1_1Visited(state) {
+      state.m1_1 = true;
+    },
+    M1_2Visited(state) {
+      state.m1_2 = true;
+    },
+    M1_3Visited(state) {
+      state.m1_3 = true;
+    },
+    M1_4Visited(state) {
+      state.m1_4 = true;
+    },
+    M1_8Visited(state) {
+      state.m1_8 = true;
+    },
+  },
+});
+
 const app = Vue.createApp({});
 // Make sure to _use_ the router instance to make the
 // whole app router-aware.
 app.use(router);
+app.use(store);
+
 app.component("sidebar", sidebar);
 
 app.component("top", {

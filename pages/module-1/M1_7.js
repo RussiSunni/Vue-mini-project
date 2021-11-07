@@ -43,7 +43,7 @@ const template = `
   
 </div>
 <div class="section module"> 
-  <router-link v-if="passed" to="/M1-8" class="module-question font-circular" @click="resetScore"> 
+  <router-link v-if="passed" to="/M1-8" class="module-question font-circular" @click="resetScore" @click="toggleNextPageVisited"> 
     <div class="section-text">
       {{ nextURLText }} <img src="assets/btn-cta-white@3x.png" /> 
     </div>
@@ -113,6 +113,9 @@ export default {
       score = localStorage.getItem("score");
       score = 0;
       localStorage.setItem("score", score);
+    },
+    toggleNextPageVisited() {
+      this.$store.commit("M1_8Visited");
     },
   },
 };
