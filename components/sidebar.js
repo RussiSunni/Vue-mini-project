@@ -32,41 +32,66 @@ const template = `
 								</div>							
 								<div v-show="dropdownMenuActive" class="dropdown-container">
                                     <div class="subitem">
-                                        <div class="item active"> 
+                                        <div v-if="M1_1" class="item active"> 
                                             <div class="item-content check">
 												<router-link to="/M1-1">Introduction</router-link>
-                                                <img v-if="M1_1" src="assets/button-check-filled@3x.png">
-												<img v-else src="assets/button-check-default@3x.png">
+                                                <img src="assets/button-check-filled@3x.png">
                                             </div>
                                         </div>
-                                        <div class="item">
+										<div v-else class="item"> 
+											<div class="item-content check">
+												Introduction
+												<img src="assets/button-check-default@3x.png">
+											</div>
+										</div>
+                                        <div v-if="M1_2" class="item active">
                                             <div class="item-content check">
 												<router-link to="/M1-2">What is sustainable investing</router-link>
-                                                <img v-if="M1_2" src="assets/button-check-filled@3x.png">
-												<img v-else src="assets/button-check-default@3x.png">
+                                                <img src="assets/button-check-filled@3x.png">											
                                             </div>
                                         </div>
-                                        <div class="item">
+										<div v-else class="item">
+											<div class="item-content check">
+												What is sustainable investing
+												<img src="assets/button-check-default@3x.png">
+											</div>
+										</div>
+                                        <div v-if="M1_3" class="item active">
                                             <div class="item-content check">
 												<router-link to="/M1-3">Why has sustainable investing become so important?</router-link>
-                                                <img v-if="M1_3" src="assets/button-check-filled@3x.png">
-												<img v-else src="assets/button-check-default@3x.png">
+                                                <img src="assets/button-check-filled@3x.png">
                                             </div>
                                         </div>
-                                        <div class="item">
+										<div v-else class="item">
+                                            <div class="item-content check">
+												Why has sustainable investing become so important?
+												<img src="assets/button-check-default@3x.png">
+                                            </div>
+                                        </div>
+                                        <div v-if="M1_4" class="item active">
                                             <div class="item-content check">
 												<router-link to="/M1-4">Knowledge check</router-link>
-                                                <img v-if="M1_4" src="assets/button-check-filled@3x.png">
-												<img v-else src="assets/button-check-default@3x.png">
+                                                <img src="assets/button-check-filled@3x.png">
                                             </div>
                                         </div>
-                                        <div class="item">
+										<div v-else class="item">
+                                            <div class="item-content check">
+												Knowledge check
+												<img src="assets/button-check-default@3x.png">
+                                            </div>
+                                        </div>
+                                        <div v-if="M1_8" class="item active">
                                             <div class="item-content check">
 												<router-link to="/M1-8">Summary</router-link>
-                                                <img v-if="M1_8" src="assets/button-check-filled@3x.png">
-												<img v-else src="assets/button-check-default@3x.png">
+                                                <img src="assets/button-check-filled@3x.png">
                                             </div>
                                         </div>
+										<div v-else class="item">
+											<div class="item-content check">
+												Summary
+												<img src="assets/button-check-default@3x.png">
+											</div>
+										</div>
                                     </div>
 								</div>
 							</div>
