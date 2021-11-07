@@ -27,8 +27,9 @@ const template = `
 						<div class="subitem">
 							<div class="item">
 								<div class="item-content check">
-								<router-link to="/M1-1" @click="toggleDropdownMenu"> Module 1</router-link>
-									<img src='assets/button-check-default@3x.png' />
+									<router-link to="/M1-1" @click="toggleDropdownMenu"> Module 1</router-link>
+									<img v-if="M1" src="assets/button-check-filled@3x.png">
+									<img v-else src='assets/button-check-default@3x.png' />
 								</div>							
 								<div v-show="dropdownMenuActive" class="dropdown-container">
                                     <div class="subitem">
@@ -147,6 +148,9 @@ export default {
     },
     M1_8() {
       return this.$store.state.m1_8;
+    },
+    M1() {
+      return this.$store.state.m1;
     },
   },
   methods: {

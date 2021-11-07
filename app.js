@@ -36,6 +36,7 @@ const store = new Vuex.Store({
     m1_3: false,
     m1_4: false,
     m1_8: false,
+    m1: false,
   },
   mutations: {
     M1_1Visited(state) {
@@ -52,6 +53,7 @@ const store = new Vuex.Store({
     },
     M1_8Visited(state) {
       state.m1_8 = true;
+      state.m1 = true;
     },
   },
 });
