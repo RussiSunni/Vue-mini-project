@@ -24,6 +24,9 @@ const routes = [
 const router = VueRouter.createRouter({
   history: VueRouter.createWebHashHistory(),
   routes,
+  scrollBehavior(to, from, savedPosition) {
+    return { left: 0, top: 0 };
+  },
 });
 
 const store = new Vuex.Store({
