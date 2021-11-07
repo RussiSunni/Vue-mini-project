@@ -83,7 +83,9 @@ export default {
     resultImgURL() {
       var score = localStorage.getItem("score");
       var imgSrc = "";
-      if (score < 2) imgSrc = "assets/illustrations-kc-score-bgd-image-33.svg";
+      if (score == 0) imgSrc = "assets/illustrations-kc-score-bgd-image-0.svg";
+      else if (score == 1)
+        imgSrc = "assets/illustrations-kc-score-bgd-image-33.svg";
       else if (score == 2)
         imgSrc = "assets/illustrations-kc-score-bgd-image-67.svg";
       else imgSrc = "assets/illustrations-kc-score-bgd-image-100.svg";
