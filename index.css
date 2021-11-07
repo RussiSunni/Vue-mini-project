@@ -37,6 +37,7 @@ html, body {
 
   .logo-img {
     max-width: 12.5rem;
+    vertical-align: middle;
   }
 
 
